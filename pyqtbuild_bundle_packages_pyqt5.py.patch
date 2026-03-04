@@ -1,0 +1,15 @@
+--- /home/w/projects/PyQt_build/tmp/build_with_custom_qt/buildvenv/lib/python3.9/site-packages/pyqtbuild/bundle/packages/pyqt5.py.old	2026-03-04 01:10:15.664177839 +0100
++++ /home/w/projects/PyQt_build/tmp/build_with_custom_qt/buildvenv/lib/python3.9/site-packages/pyqtbuild/bundle/packages/pyqt5.py	2026-03-03 22:01:35.009586132 +0100
+@@ -181,6 +181,12 @@
+     'QtXml':
+         VersionedMetadata(),
+ 
++    'QtWebKit':
++        VersionedMetadata(),
++
++    'QtWebKitWidgets':
++        VersionedMetadata(),
++
+     'QtXmlPatterns':
+         VersionedMetadata(
+             qml=True,

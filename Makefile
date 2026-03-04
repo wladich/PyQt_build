@@ -16,7 +16,8 @@ help:
 test:
 	./run_test_in_docker.sh
 
-build: clean
+build:
+	rm -rf ./dist
 	SDIST_URL="$(sdist)" ./build_pyqt.sh
 
 all: build test
@@ -25,4 +26,4 @@ sources:
 	@curl --silent https://pypi.org/simple/pyqt5/ | sed -rn 's/.*href="([^"]+).*/\1/g p' | grep --fixed-strings '.tar.gz'
 
 clean:
-	rm -rf dist
+	rm -rf __pycache__
