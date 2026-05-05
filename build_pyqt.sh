@@ -39,7 +39,7 @@ docker run --rm -ti -v "$(pwd)"/dist:/dist -v "$(dirname $0)":/src:ro -e SDIST_U
   tar xaf *.tar*
   rm *.tar*
   cd PyQt*
-  /opt/sip/bin/sip-wheel --confirm-license --jobs $(nproc) --target-qt-dir Qt/lib --pep484-pyi
+  /opt/sip/bin/sip-wheel --confirm-license --jobs $(nproc) --target-qt-dir Qt/lib
   mkdir bundled
   cd bundled
   /opt/sip/bin/pyqt-bundle --verbose --qt-dir /qt/5.15.2/gcc_64 ../*.whl
